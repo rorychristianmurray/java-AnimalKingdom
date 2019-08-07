@@ -27,7 +27,7 @@ public class Mammal extends AbstractAnimal {
     @Override
     public String toString()
     {
-        return "Mammal{" + "name=" + name + '\'' + ", discovered in " + discovered "}"
+        return "Mammal{" + "name=" + name + '\'' + ", discovered in " + discovered + "}"
     }
 
 }

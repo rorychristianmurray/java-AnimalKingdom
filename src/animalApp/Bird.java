@@ -21,13 +21,13 @@ public class Bird extends AbstractAnimal {
     @Override
     public String reproduce()
     {
-        return "Birds lay eggs reproduce"
+        return "Birds lay eggs to reproduce"
     }
 
     @Override
     public String toString()
     {
-        return "Bird{" + "name=" + name + '\'' + ", discovered in " + discovered "}"
+        return "Bird{" + "name=" + name + '\'' + ", discovered in " + discovered + "}"
     }
 
 }
