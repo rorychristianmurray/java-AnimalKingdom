@@ -17,7 +17,7 @@ public abstract class AbstractAnimal {
         this.discovered = discovered;
     }
 
-    public String consume()
+    public void consume()
     {
         System.out.println("Yum yum eat em up!")
     }
@@ -27,5 +27,21 @@ public abstract class AbstractAnimal {
     public abstract String breath();
 
     public abstract String reproduce();
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public int getDiscovered() {
+        return discovered;
+    }
+
+    public void setDiscovered(int discovered) {
+        this.discovered = discovered;
+    }
 
 }
