@@ -10,7 +10,7 @@ public class Main {
         Mammal panda = new Mammal("Panda", 1869);
         Mammal zebra = new Mammal("Zebra", 1778);
         Mammal koala = new Mammal("Koala", 1816);
-        Mammal sloth = new Mammal("Panda", 1804);
+        Mammal sloth = new Mammal("Sloth", 1804);
         Mammal armadillo = new Mammal("Armadillo", 1758);
         Mammal raccoon = new Mammal("Raccoon", 1758);
         Mammal bigfoot = new Mammal("Bigfoot", 2021);
@@ -28,6 +28,43 @@ public class Main {
         Fish salmon = new Fish("Salmon", 1758);
         Fish catfish = new Fish("Catfish", 1817);
         Fish perch = new Fish("Perch", 1758);
+
+        // Combine classes and add to list
+
+        ArrayList<AbstractAnimal> rorysAnimals = new ArrayList<AbstractAnimal>();
+
+        rorysAnimals.add(panda);
+        rorysAnimals.add(zebra);
+        rorysAnimals.add(koala);
+        rorysAnimals.add(sloth);
+        rorysAnimals.add(armadillo);
+        rorysAnimals.add(raccoon);
+        rorysAnimals.add(bigfoot);
+        rorysAnimals.add(pigeon);
+        rorysAnimals.add(peacock);
+        rorysAnimals.add(toucan);
+        rorysAnimals.add(parrot);
+        rorysAnimals.add(swan);
+        rorysAnimals.add(salmon);
+        rorysAnimals.add(catfish);
+        rorysAnimals.add(perch);
+
+
+        // Filtering
+
+        System.out.println("***Lambda Expressions Comin' At Ya ***")
+        System.out.println();
+        System.out.println();
+
+        System.out.println("Sort animals in descending order by year named")
+        System.out.println();
+        rorysAnimals.sort((a1, a2) -> a1.getDiscovered() - a2.getDiscovered());
+
+        System.out.println("List all animals alphabetically")
+        System.out.println();
+        rorysAnimals.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName());
+
+
 
     }
 }
