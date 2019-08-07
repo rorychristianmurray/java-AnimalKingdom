@@ -23,5 +23,11 @@ public class Main {
         Bird parrot = new Bird("Parrot", 1824);
         Bird swan = new Bird("Swan", 1758);
 
+        // Create fish
+
+        Fish salmon = new Fish("Salmon", 1758);
+        Fish catfish = new Fish("Catfish", 1817);
+        Fish perch = new Fish("Perch", 1758);
+
     }
 }
