@@ -1,6 +1,5 @@
 package animalApp;
 
-public interface CheckAnimal
-{
-    boolean(AbstractAnimal a);
+public interface CheckAnimal {
+    boolean check(AbstractAnimal a);
 }

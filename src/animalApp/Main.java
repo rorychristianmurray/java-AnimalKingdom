@@ -49,25 +49,23 @@ public class Main {
         rorysAnimals.add(catfish);
         rorysAnimals.add(perch);
 
-
         // Filtering
 
-        System.out.println("***Lambda Expressions Comin' At Ya ***")
+        System.out.println("***Lambda Expressions Comin' At Ya ***");
         System.out.println();
         System.out.println();
 
-        System.out.println("Sort animals in descending order by year named")
+        System.out.println("Sort animals in descending order by year named");
         System.out.println();
-        rorysAnimals.sort((a1, a2) -> a1.getDiscovered() - a2.getDiscovered());
+        rorysAnimals.sort((a1, a2) -> a2.getDiscovered() - a1.getDiscovered());
 
-        System.out.println("List all animals alphabetically")
+        System.out.println("List all animals alphabetically");
         System.out.println();
-        rorysAnimals.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName());
+        rorysAnimals.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
 
-        System.out.println("List all animals ordered by movement style")
+        System.out.println("List all animals ordered by movement style");
         System.out.println();
-
-
+        rorysAnimals.sort((a1, a2) -> a1.move().compareToIgnoreCase(a2.move()));
 
     }
 }
