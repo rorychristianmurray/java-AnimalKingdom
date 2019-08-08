@@ -4,10 +4,10 @@ package animalApp;
 
 public abstract class AbstractAnimal {
     // fields - values - state
-    private static int maxId = 0;
-    private int id;
-    private String name;
-    private int discovered;
+    protected static int maxId = 0;
+    protected int id;
+    protected String name;
+    protected int discovered;
 
     // constructor
     public AbstractAnimal(String name, int discovered) {
@@ -18,7 +18,7 @@ public abstract class AbstractAnimal {
         this.discovered = discovered;
     }
 
-    public void consume() {
+    public String consume() {
         return "Yum yum eat em up!";
     }
 
