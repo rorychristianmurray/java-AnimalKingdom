@@ -1,9 +1,10 @@
 package animalApp;
 
 public class Bird extends AbstractAnimal {
+
     public Bird(String name, int discovered) {
-        this.name = name;
-        this.discovered = discovered;
+        super(name, discovered)
+
     }
 
     @Override

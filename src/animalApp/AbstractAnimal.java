@@ -9,6 +9,7 @@ public abstract class AbstractAnimal {
     private String name;
     private int discovered;
 
+    // constructor
     public AbstractAnimal(String name, int discovered) {
         // initial state
         maxId++;
@@ -17,16 +18,20 @@ public abstract class AbstractAnimal {
         this.discovered = discovered;
     }
 
-    public void consume()
-    {
-        System.out.println("Yum yum eat em up!")
+    public void consume() {
+        return "Yum yum eat em up!";
     }
 
+    // abstract class methods
     public abstract String move();
 
     public abstract String breath();
 
     public abstract String reproduce();
+
+    public int getId() {
+        return id;
+    }
 
     public String getName() {
         return name;

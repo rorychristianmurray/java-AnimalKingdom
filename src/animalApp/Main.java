@@ -64,6 +64,9 @@ public class Main {
         System.out.println();
         rorysAnimals.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName());
 
+        System.out.println("List all animals ordered by movement style")
+        System.out.println();
+
 
 
     }
