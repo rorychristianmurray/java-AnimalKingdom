@@ -9,17 +9,17 @@ public class Bird extends AbstractAnimal {
 
     @Override
     public String move() {
-        return "Birds flying high, you know how I feel";
+        return "fly";
     }
 
     @Override
-    public String breath() {
-        return "Birds breath with lungs";
+    public String breathe() {
+        return "lungs";
     }
 
     @Override
     public String reproduce() {
-        return "Birds lay eggs to reproduce";
+        return "lay eggs";
     }
 
     @Override

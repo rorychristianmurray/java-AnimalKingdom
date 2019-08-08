@@ -25,7 +25,7 @@ public abstract class AbstractAnimal {
     // abstract class methods
     public abstract String move();
 
-    public abstract String breath();
+    public abstract String breathe();
 
     public abstract String reproduce();
 

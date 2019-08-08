@@ -8,17 +8,17 @@ public class Mammal extends AbstractAnimal {
 
     @Override
     public String move() {
-        return "Mammals walk when they move";
+        return "walk";
     }
 
     @Override
-    public String breath() {
-        return "Mammals breath using lungs";
+    public String breathe() {
+        return "lungs";
     }
 
     @Override
     public String reproduce() {
-        return "When mammals reproduce, they have live births";
+        return "live births";
     }
 
     @Override

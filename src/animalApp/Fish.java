@@ -8,17 +8,17 @@ public class Fish extends AbstractAnimal {
 
     @Override
     public String move() {
-        return "Fish swim to get around";
+        return "swim";
     }
 
     @Override
-    public String breath() {
-        return "Fish use gills to breathe";
+    public String breathe() {
+        return "gills";
     }
 
     @Override
     public String reproduce() {
-        return "Fish lay eggs to reproduce";
+        return "eggs";
     }
 
     @Override

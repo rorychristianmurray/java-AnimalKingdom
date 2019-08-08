@@ -3,6 +3,18 @@ package animalApp;
 import java.util.*;
 
 public class Main {
+
+    public static void printAnimals(ArrayList<AbstractAnimal> rorysAnimals, CheckAnimal checker) {
+        // For each one of the items ('a') of type AbstractAnimal in the ArrayList
+        // rorysAnimals
+        for (AbstractAnimal a : rorysAnimals) {
+            // if a is true
+            if (checker.check(a)) {
+                System.out.println(a.getName() + " " + a.getId());
+            }
+        }
+    }
+
     public static void main(String[] args) {
 
         // Create mammals
@@ -72,7 +84,39 @@ public class Main {
         System.out.println("List all animals ordered by movement style");
         System.out.println();
         rorysAnimals.sort((a1, a2) -> a1.move().compareToIgnoreCase(a2.move()));
-        System.out.println(rorysAnimals.forEach((a) -> a.move()));
+        rorysAnimals.forEach(a -> System.out.println("Animal: " + a.getName() + "Moves " + a.move()));
+        System.out.println();
+        System.out.println();
+
+        System.out.println("List only lung breathing animals");
+        System.out.println();
+        printAnimals(rorysAnimals, a -> a.breathe() == "lungs");
+        System.out.println();
+        System.out.println();
+
+        System.out.println("List only lung breathing animals named in 1758");
+        System.out.println();
+        printAnimals(rorysAnimals, a -> a.breathe() == "lungs" && a.getDiscovered() == 1758);
+        System.out.println();
+        System.out.println();
+
+        System.out.println("List only egg laying animals with lungs");
+        System.out.println();
+        printAnimals(rorysAnimals, a -> a.breathe() == "lungs" && a.reproduce() == "lay eggs");
+        System.out.println();
+        System.out.println();
+
+        System.out.println("List alphabetically only animals named in 1758");
+        System.out.println();
+        rorysAnimals.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
+        printAnimals(rorysAnimals, a -> a.getDiscovered() == 1758);
+        System.out.println();
+        System.out.println();
+
+        System.out.println("List mammals alphabetically");
+        System.out.println();
+        rorysAnimals.sort((a1, a2) -> a1.getName().compareToIgnoreCase(a2.getName()));
+        printAnimals(rorysAnimals, a -> (a instanceof Mammal));
         System.out.println();
         System.out.println();
 
